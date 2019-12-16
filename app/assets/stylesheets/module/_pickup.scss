@@ -1,0 +1,46 @@
+.pickup{
+  background-color: white;
+  height: calc(100vh - 280px);
+  width: 300px;
+  padding: 20px;
+  top: 60px;
+  position: fixed;
+  box-sizing: border-box;
+  
+  .comment{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    color: #293760;
+    line-height: 25px;
+    font-weight: bold;  
+    font-family: 'Courier New', Courier, monospace;   
+  }
+  .contents{
+    height: 330px;
+    width: 100%;
+    background-color: white;
+    &__imeage{
+      height: 330px;
+      width: 100%
+     }
+    } 
+  
+  .stutas {
+    height: 250px;
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    &__comment{
+      position: absolute;
+       top: 12px;
+       right: 14px;
+       width: 230px;
+       height: 225px;
+       font-family: 'Courier New', Courier, monospace;
+       color: #293760;
+       font-weight: 500;
+    }
+  }   
+}

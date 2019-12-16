@@ -1,0 +1,17 @@
+.main-container
+  %h1= image_tag 'mainlogo', size: "400x90", alt: "background"
+  - if user_signed_in?
+    %h2
+      HELLO! #{current_user.name}
+    %h4
+      メールアドレス： #{current_user.email}
+    = link_to "ログアウト", destroy_user_session_path, method: :delete
+  - else
+    %h2 You are not logged in
+    .button-box
+      .button-box__btn1
+        = link_to user_session_path do
+          =image_tag 'button1.png', size: "150x65", alt: "login"
+      .button-box__btn2
+        = link_to new_user_registration_path do
+          =image_tag 'button2.png', size: "150x65", alt: "signin"

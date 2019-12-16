@@ -1,0 +1,25 @@
+.user-nav
+  .header
+    .header__logo
+      =image_tag 'mainlogo', size: "180x40", alt: "login" 
+  .nav
+    .nav__outer
+      = link_to "#" do
+        =image_tag 'j.png', size: "40x40", alt: "outer"
+    .nav__tops
+      = link_to "#" do
+        =image_tag 'T.png', size: "40x40", alt: "tops"
+    .nav__bottoms
+      = link_to "#" do
+        =image_tag 'istockphoto-1009622864-1024x1024.png', size: "40x40", alt: "bottoms"
+    .nav__edit
+      = link_to "#" do
+        <i class="fas fa-camera-retro"></i>
+    .nav__config
+      = link_to "#" do
+        <i class="fas fa-cogs"></i>
+    .nav__logout
+      = link_to root_path do
+        <i class="fas fa-sign-out-alt"></i>
+  
+    

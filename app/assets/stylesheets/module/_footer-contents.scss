@@ -1,0 +1,48 @@
+.footer-continer{
+  display: flex;
+  flex-direction: column;
+  // height: 220px;
+  bottom: 0;
+  // min-height: 100vh;
+  // position: relative;
+  position: fixed;
+
+  .footer{
+  height: 220px;
+  // height: calc(-100vh - 300px);
+  width: 100vw;
+  border-top:double 3px  #405491;
+  background-color: white;
+  position: relative;
+  bottom:0;
+  &__title{
+    position: absolute;
+    width: 200px;
+    margin: 20px 0 0 20px;
+    background-color: white;
+    font-size: 20px;
+    color: #293760;
+    // line-height: 50px;
+    font-weight: bold;  
+    font-family: 'Courier New', Courier, monospace;   
+  }
+}
+  .contents{
+    bottom: 0;
+    height: 150px;
+    width: 100VW;
+    margin: 10px;
+    margin-top: 60px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+
+    &__slides{
+      width: 150px;
+      height: 150px;
+      background-color:grey;
+      margin: 10px;
+      position: absolute;
+    }
+ } 
+}
