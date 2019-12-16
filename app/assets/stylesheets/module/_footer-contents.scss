@@ -36,6 +36,7 @@
     overflow: hidden;
     position: fixed;
     display: flex;
+    justify-content: space-between;
 
     &__slides{
       width: 150px;
